@@ -1,8 +1,9 @@
-section{
+#realisations section{
     display: flex;
+    align-items: center;
 }
 
-section div{
+#realisations section div{
     width: 75%;
     margin: 0 2.5%;
     padding: 1rem 0;
@@ -10,26 +11,28 @@ section div{
     flex-direction: column;
 }
 
-section div header{
-    background-color: transparent;
+#realisations section div header{
+    background: none;
     margin-top: 0;
     padding: 0;
     height: 1.2rem;
     text-align: center;
 }
 
-h3{
+#realisations h3{
     margin: 0;
 }
 
-section div p{
+#realisations section div p{
     text-align: justify;
 }
 
-section img{
+#realisations section img{
+    align-self: center;
     border-radius: 20px;
     max-width: 20%;
     margin: 1rem;
+    height: min-content;
 }
 
 .right{
@@ -40,6 +43,8 @@ section img{
     order: 0;
 }
 
-section div footer{
+#realisations section div footer{
+    margin-top: auto;
+    background: none;
     padding: 0;
 }

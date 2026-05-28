@@ -2,11 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 50px;
 }
 
 .intro-texte {
-    width: 75%;
+    width: 80%;
     padding-left: 0.5rem;
 }
 
@@ -16,7 +15,7 @@
 }
 
 .intro-photo {
-    width: 20%;
+    width: 15%;
     height: auto;
 
     padding: 6px;

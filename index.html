@@ -1,68 +1,220 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jules NEUVILLE - Étudiant Informatique</title>
-        <link rel="stylesheet" href="./css/global.css">
-        <link rel="stylesheet" href="./css/index.css">
-    </head>
-    <body>
-        <header>
-            <!-- img retirée pour l'instant -->
-            <h1>Étudiant Informatique</h1>
-            <h2>Jules NEUVILLE</h2>
-            <nav>
-                <ul>
-                    <li><span>Accueil</span></li>
-                    <li><a href="./html/Formation.html">Formations</a></li>
-                    <li><a href="./html/Competences.html">Compétences</a></li>
-                    <!--<li><a href="./html/Experiences.html">Expériences</a></li> -->
-                    <li><a href="./html/Realisations.html">Réalisations</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="intro">
-                <div class="intro-texte">
-                    <p>
-                    Actuellement en 2e année de BUT Informatique, je m’intéresse à la logique, à la programmation et à la compréhension des systèmes informatiques.
-                    Cette formation m’a permis d’approfondir les bases de l’informatique et de mieux comprendre le fonctionnement des outils et des concepts étudiés.
-                    Je comprends rapidement les principes abordés, même si leur mise en pratique peut parfois demander plus de temps.
-                    J’apprends surtout en pratiquant et en prenant le temps de comprendre ce que je fais.
-                    </p>
-                </div>
-                <div class="intro-photo">
-                    <img src="./img/photoIdentite.jpg" alt="Photo de Jules NEUVILLE">
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="infos">
-                <div class="contacts">
-                    <strong>Me contacter</strong>
-                    <p>
-                        <a href="mailto:jules.neuville@univ-lille.fr">
-                            → Par email
-                        </a>
-                    </p>
-                    <p>
-                        <a href="tel:+33752045793">
-                            → 07&nbsp;52&nbsp;04&nbsp;57&nbsp;93
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/jules-neuville-0377b935a" target="_blank" rel="noopener">
-                            → Avec LinkedIn
-                        </a>
-                    </p>
-                </div>
-                <!--<div class=""futurs infos></div>-->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Jules NEUVILLE - Étudiant Informatique</title>
+    <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/intro.css" rel="stylesheet">
+    <link href="./css/formation.css" rel="stylesheet">
+    <link href="./css/competences.css" rel="stylesheet">
+    <link href="./css/experiences.css" rel="stylesheet">
+    <link href="./css/realisations.css" rel="stylesheet">
+
+    <script defer src="./src/Main.js"></script>
+</head>
+<body>
+<header>
+    <h1>Étudiant Informatique</h1>
+    <h2>Jules NEUVILLE</h2>
+    <nav>
+        <ul>
+            <li>
+                <button class="button active" id="introButton" type="button">Accueil</button>
+            </li>
+            <li>
+                <button class="button" id="formationButton" type="button">Formations</button>
+            </li>
+            <li>
+                <button class="button" id="competenceButton" type="button">Compétences</button>
+            </li>
+            <!--<li>
+                <button type="button" class="button" id="experienceButton">Expériences</button>
+            </li>-->
+            <li>
+                <button class="button" id="realisationButton" type="button">Réalisations</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="section" id="intro">
+        <div class="intro-texte">
+            <p>
+                Actuellement en 2e année de BUT Informatique, je m’intéresse à la logique, à la programmation et à la
+                compréhension des systèmes informatiques.
+                Cette formation m’a permis d’approfondir les bases de l’informatique et de mieux comprendre le
+                fonctionnement des outils et des concepts étudiés.
+                Je comprends rapidement les principes abordés, même si leur mise en pratique peut parfois demander plus
+                de temps.
+                J’apprends surtout en pratiquant et en prenant le temps de comprendre ce que je fais.
+            </p>
+        </div>
+        <div class="intro-photo">
+            <img alt="Photo de Jules NEUVILLE" src="./img/intro/photoIdentite.jpg">
+        </div>
+    </section>
+
+    <section class="hidden" id="formation">
+        <section class="section" id="IUT">
+            <h2>BUT Informatique</h2>
+            <p class="formation-meta">
+                2023 – en cours
+            </p>
+
+            <div class="formation-description">
+                <p>
+                    Formation universitaire orientée vers l’informatique,
+                    couvrant les bases de la programmation, de l’algorithmique
+                    et de la compréhension des systèmes informatiques.
+                </p>
+                <a class="formation-logo"
+                   href="https://formation.univ-lille.fr/fr/offre-de-formation/but-BUT/bachelor-universitaire-de-technologie-informatique-MG082352.html">
+                    <img alt="Logo IUT" class="formation-logo" src="img/formations/Logo_IUT.png">
+                </a>
             </div>
+        </section>
 
-            <p>© 2025 Jules NEUVILLE</p> <!--A part en dessous-->
-        </footer>
+        <section class="section" id="Voltaire">
+            <h2>Baccalauréat général</h2>
+            <p class="formation-meta">
+                2023<br>
+                Lycée Voltaire, Wingles (62)
+            </p>
 
-        <script src="#"></script> <!-- JS futur -->
-    </body>
+            <div class="formation-description">
+                <p>
+                    Spécialités :
+                </p>
+                <ul>
+                    <li>Numérique et Sciences Informatiques (NSI)</li>
+                    <li>Langues, littératures et cultures étrangères et régionales (LLCER)</li>
+                </ul>
+                <a class="formation-logo" href="https://lycee-voltaire-wingles.etab.ac-lille.fr/index.html">
+                    <img alt="Logo Lycée Voltaire" class="formation-logo" src="img/formations/Logo_Voltaire.jpg">
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <section class="hidden" id="competences">
+        <section class="section" id="competences-tech">
+            <h2>Compétences techniques</h2>
+            <ul>
+                <li>
+                    <img alt="logo python" class="tech-logo" src="img/competences/logo_python.png">
+                    <span>Python</span>
+                </li>
+                <li>
+                    <img alt="logo java" class="tech-logo" src="img/competences/logo_java.png">
+                    <span>Java</span>
+                </li>
+                <li>
+                    <img alt="logo html" class="tech-logo" src="img/competences/logo_html.png">
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <img alt="logo css" class="tech-logo" src="img/competences/logo_css.png">
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <img alt="logo sql" class="tech-logo" src="img/competences/logo_sql.jpg">
+                    <span>SQL</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="savoir-etre">
+            <h2>Savoir-être</h2>
+            <ul>
+                <li>
+                    Rigoureux
+                    <p>Je travaille avec méthode et attention afin de produire un résultat propre et soigné, cohérent et conforme aux attentes.</p>
+                </li>
+                <li>
+                    Fiable
+                    <p>Je m’implique dans les tâches qui me sont confiées et je fais en sorte de respecter les attentes et les délais.</p>
+                </li>
+                <li>
+                    À l’écoute
+                    <p>Je prends le temps de comprendre les informations transmises avant de donner mon avis ou de proposer mon aide en fonction de ce qui a été dit.</p>
+                </li>
+                <li>
+                    Respectueux
+                    <p>De manière générale, je fais attention à adopter une attitude respectueuse envers les personnes avec qui je travaille.</p>
+                </li>
+
+            </ul>
+        </section>
+    </section>
+
+    <section class="hidden" id="realisations">
+        <section class="section">
+            <img alt="Image de l'écran titre du jeu" class="right" src="img/realisations/RTTS_home_jeu.png">
+            <div>
+                <header>
+                    <h3>Road To The Sortie</h3>
+                </header>
+                <p>Cette SAÉ visait à nous faire déveloper un jeu autour d'un labyrinthe dans lequel la génération de labyrinthe est très importante.</p>
+                <p>Ma contribution dans ce projet aura été de soutenir les autres membres et d'aider ceux qui en avait besoin.</p>
+                <footer>
+                    <a href="https://gitlab.univ-lille.fr/jsae/2025-2026/projets/groupe-g/equipe-8/jsae">→ Voir le projet sur GitLab (dépôt privé)</a>
+                </footer>
+            </div>
+        </section>
+        <section class="section">
+            <img alt="Écran d'accueil de la JSAÉ" class="left" src="img/realisations/JSAE_home_page.png">
+            <div>
+                <header>
+                    <h3>JSAÉ</h3>
+                </header>
+                <p>La JSAÉ est un projet qui avait pour but de nous faire développer un jeu shoot em' up dans un site en HTML/CSS/TimeScript</p>
+                <p>Ma contribution dans ce projet aura été de m'occuper de la structure HTML/CSS/TimeScript</p>
+                <footer>
+                    <a href="https://gitlab.univ-lille.fr/jsae/2025-2026/projets/groupe-g/equipe-8/jsae">→ Voir le projet sur GitLab (dépôt privé)</a>
+                </footer>
+            </div>
+        </section>
+        <section class="section">
+            <img alt="Tableau des endpoints de l’API WasteType" class="right" src="img/realisations/REST_WasteType_endpoints.png" height="447" width="898"/>
+            <div>
+                <header>
+                    <h3>TITRE</h3>
+                </header>
+                <p>Le but de cette SAÉ était de développer une API REST pour une entreprise factice de récolte de déchets afin de nous faire pratiquer le développement de l'architecture REST.</p>
+                <p>Ma contribution dans ce projet aura été de m'occuper de créer les DTO, de toute la partie "contrôleurs" de l'architecture, les tests faits avec Bruno, ainsi que la partie documentation.</p>
+                <footer>
+                    <a href="">→ Voir le projet sur GitLab (dépôt privé)</a>
+                </footer>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <div class="infos">
+        <div class="contacts">
+            <strong>Me contacter :</strong>
+            <p>
+                <a href="mailto:jules.neuville@univ-lille.fr">
+                    → Par email
+                </a>
+            </p>
+            <p>
+                <a href="tel:+33752045793">
+                    → 07&nbsp;52&nbsp;04&nbsp;57&nbsp;93
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/jules-neuville-0377b935a" rel="noopener" target="_blank">
+                    → Avec LinkedIn
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <p>© 2025-2026 Jules NEUVILLE</p>
+</footer>
+</body>
 </html>
